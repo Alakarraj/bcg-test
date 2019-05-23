@@ -1,6 +1,6 @@
 var express = require("express");
 var server = express();
-
+var port = process.env.PORT || 3000;
 // middleware
 server.use(express.static(__dirname + "/public"));
 
@@ -8,8 +8,4 @@ server.use(express.static(__dirname + "/public"));
 server.use("*", function(req, res) {
   // serve file
 });
-
-var port = 80;
-server.listen(port, function() {
-  console.log("server listening on port " + port);
-});
+server.listen(port);
