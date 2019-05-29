@@ -12,45 +12,179 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
   </head>
-  <body>
-    <section class="header">
-      <nav class="menu"> 
-        <ul class="menu-links">
-          <li>Who We Are</li>
-          <li>What We Do</li>
-          <li>Our Work</li>
-          <li>Get In Touch</li>
-          <li>Blog</li>
+  <body>  
+    <header class="header row" id="intro"> <nav class="navbar navbar-expand-lg fixed-top menu">
+      <a class="navbar-brand text-white" href="#intro"> <i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars fa-2x text-white" aria-hidden="true"></i>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto menu-links">
+            <li class="nav-item"><a href="#whoweare" class="nav-link">Who We Are<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a href="#whatwedo" class="nav-link">What We Do</a></li>
+            <li class="nav-item"><a href="#ourwork" class="nav-link">Our Work</a></li>
+            <li class="nav-item"><a href="#getintouch" class="nav-link" >Get In Touch</a></li>
+            <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
         </ul>
-      </nav>
-      <div class="title">
-        <h1>Info-graphic campaign for a ride sharing app</h1>
+      </div>
+    </nav>
+      <div class="title container">
+        <h1 class="col-10">Info-graphic campaign for a ride sharing app</h1>
         <ul>
           <li>Strategy</li>
           <li>Ideation</li>
           <li>Branding</li>
         </ul>
-        <button></button>
+        <p class="mt-5"><a href="#whoweare"><!--i class="fa fa-long-arrow-down fa-4x text-white"></i--><img class="down-arrow" src="img/down-arrow-icon.png" alt="down arrow"/></a></p>
+        
+      </div>
+    </header>
+    <section class="wrapper row w-100" id="whoweare">
+      <div class="row mr-section align-bottom">
+          <div class="col-6 p-5">
+            <h2>The challenge</h2>
+            <p>Donec sed efficitur sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean mollis lorem felis, vel interdum dolor tincidunt eget. Suspendisse at nulla mattis, vehicula purus in, vehicula orci.</p>
+            <p>Morbi semper venenatis tempus. Etiam eget diam sit amet turpis tincidunt placerat id ut neque. Quisque bibendum lectus mauris. Nullam sit amet elementum nisi. Fusce ac elit tincidunt, lacinia erat vel, auctor ex. Phasellus congue pharetra pulvinar. Maecenas a euismod mi. Sed laoreet sapien ex, in porta nisl volutpat eu.</p>
+            <button class="bcg-btn" class="bcg-btn" onclick="location.href='#whatwedo'">scroll for more</button>
+          </div>
+          <div class="col-6 col-full img-right">
+            <img src="img/introDisplay.jpg" alt="Header Display" />
+          </div>
       </div>
     </section>
-    <section class="wrapper">
-      <div>
-        <div></div>
+    <section class="wrapper row" id="whatwedo">
+      <div class="col-6 gallery card-columns ">
+        <div class="card"> <img src="img/gallery/1.jpg" alt="gallery Image 1" /></div>
+        <div class="card"><img src="img/gallery/2.jpg" alt="gallery Image 2" /></div>
+        <div class="card"><img src="img/gallery/3.jpg" alt="gallery Image 3" /></div>
+        <div class="card"> <img src="img/gallery/4.jpg" alt="gallery Image 4" /></div>
+        <div class="card"><img src="img/gallery/5.jpg" alt="gallery Image 5" /></div>
+        <div class="card"><img src="img/gallery/6.jpg" alt="gallery Image 6" /></div>
       </div>
-      <div>
-        <div></div>
+      <div class="col-6 col-full ">
+        <div class="row p-5 col-10"> <h2>Our approach</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet  dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+
+            </p>
+          
+          <button class="bcg-btn" onclick="location.href='#ourwork'">scroll for more</button>
+        </div>
+        <div class="gallery gallery2 card-columns">
+            <div class="card"> <img src="img/gallery/7.jpg" alt="gallery Image 1" /></div>
+            <div class="card"><img src="img/gallery/8.jpg" alt="gallery Image 2" /></div>
+        </div>        
       </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-      </div>
+      <div class="col-full testimonial p-5 container mt-5"><h3>Curabitur suscipit sapien sem, aeleme ntum elit sodales in. Ut aliquam magna ultricies, lacinia turpis sed</h3><p>- John Doe, Co-Founder</p></div>
     </section>
-    <script src="" async defer></script>
+    <section class="wrapper row col-full" id="ourwork">
+      <div class="row image-left mt-5 mb-5 col-10  col-full">
+        <img src="img/introDisplay.jpg" />
+      </div>
+      <div class="row mt-5 mb-5 float-right w-100  col-full">
+          <div class="col-4 image-round video-image col-full"><button class="play-btn"><i class="fa fa-play fa-3x text-white ml-2"></i></button><img src="img/video-image1.jpg" /></div>
+          <div class="col-6 image-right video-image col-full"><button class="play-btn"><i class="fa fa-play fa-3x text-white ml-2"></i></button><img src="img/video-image2.jpg" /></div>
+        </div>
+        <div class="col-full p-5 mt-5 ml-5 col-7">
+            <h3>Similar cases/projects</h3><p>Donec sed efficitur sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean mollis lorem felis, vel interdum dolor tincidunt eget. Suspendisse at nulla mattis, vehicula purus in, vehicula orci.</p>
+          </div>
+          <div class="coll-full"><!--Carousel Wrapper-->
+    <div id="image-gallery" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+    
+      <!--Controls-->
+      <div class="controls-bottom">
+        <a class="gallery-btn p-4 mr-5" href="#image-gallery" data-slide="prev"><i class="fa fa-arrow-left fa-1x p-1"></i></a>
+        <a class="gallery-btn  p-4" href="#image-gallery" data-slide="next"><i class="fa fa-arrow-right fa-1x p-1"></i></a>
+      </div>
+      <!--/.Controls-->
+    
+      <!--Slides-->
+      <div class="carousel-inner container" role="listbox">
+    
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img class="img-fluid" src="img/work/display.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img class="img-fluid" src="img/work/interior.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+    
+          <div class="col-4 mb-4">
+            <div class="card">
+              <img class="img-fluid" src="img/work/pc.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+        </div>
+        <!--/.First slide-->
+    
+        <!--Second slide-->
+        <div class="carousel-item">
+            <div class="col-4 mb-4">
+                <div class="card">
+                  <img class="img-fluid" src="img/work/display.jpg"
+                    alt="Card image cap">
+                </div>
+              </div>
+        
+              <div class="col-4 mb-4">
+                <div class="card">
+                  <img class="img-fluid" src="img/work/interior.jpg"
+                    alt="Card image cap">
+                </div>
+              </div>
+        
+              <div class="col-4 mb-4">
+                <div class="card">
+                  <img class="img-fluid" src="img/work/pc.jpg"
+                    alt="Card image cap">
+                </div>
+              </div>
+        </div>
+        <!--/.Second slide-->
+    
+      </div>
+      <!--/.Slides-->
+    
+    </div>
+    <!--/.Carousel Wrapper--></div>
+    </section>
+    <footer class="wrapper row mt-4" id="getintouch">
+        <div class="row col-full m-2 mt-5 w-100 border-top border-bottom">
+            <div class="w-100 p-5 text-center"> 
+              <p class="site-green w-100">SO WHAT’S NEXT: <strong>LET’S CONNECT</strong></p>
+              <p class="w-100">Let’s connect and create an unique business partnership</p>
+              <p class="pt-3 mb-0"><a href="#"><i class="fa fa-arrow-circle-o-right fa-2x  site-green"></i></a></p>
+            </div>
+          </div>
+          <div class="row col-full m-2 w-100 ">
+              <ul class="col-8 nav nav-first"> 
+                <li class="nav-item">&copy; 2018 The Boston Consulting Group</li>
+                <li class="nav-item"><a href="#">Privacy</a></li>
+                <li class="nav-item border-right-0"><a href="#">Terms of Use</a></li>
+              </ul>
+              <ul class="col-4 nav nav-last"> 
+                  <li class="nav-item"><a href="#"><i class="fa fa-envelope fa-1x mr-2 white-icon"></i>Contact Us</a></li>
+                  <li class="nav-item"><a href="#"><i class="fa fa-arrow-right fa-1x mr-2 white-icon"></i>Subscribe</a></li>
+                  <li class="nav-item"><a href="#"><i class="fa fa-share-alt fa-1x mr-2 white-icon"></i>Share Page</a></li>
+                  <li class="nav-item"><a href="#"><i class="fa fa-linkedin fa-1x mr-2 white-icon"></i>Follow Us</a></li>
+                </ul>
+          </div>
+          <div class="row col-full m-2 w-100 "><p class="text-small p-3">The Boston Consulting Group is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, age, religion, sex, sexual orientation, gender identity / expression, national origin, protected veteran status, or any other characteristic
+              protected under federal, state or local law, where applicable, and those with criminal histories will be considered in a manner consistent with applicable state and local laws.</p></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
