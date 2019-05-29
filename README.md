@@ -8,7 +8,8 @@ Version Control : Github
 Cloud Platform : Herokku
 
 Note : Excluded Node Modules
-       Compatible only with PC
+       
+Compatibility : Only with PC
     
 Fonts :    Aaux Pro - This is the similar font to the provided PDF
            Georgia and Arial on certain portion
