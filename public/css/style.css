@@ -142,7 +142,7 @@ h3 {
   .header .title {
     padding-top: calc( 100vh - 70vh); }
     .header .title h1 {
-      color: #fff;
+      color: white;
       font-family: 'aaux_probold';
       font-size: calc(4.5vw + 20px);
       padding: 0;
@@ -161,13 +161,17 @@ h3 {
           margin: 0;
           padding: 0; }
         .header .title ul li::before {
-          color: #fff;
+          color: white;
           content: "\2022";
           padding: 0 .4em 0 0;
           position: relative;
           top: 3px; }
     .header .title .down-arrow {
       height: 3vw; }
+  .header#intro2 {
+    background: url("../img/headerBackgroundDevices.jpg") no-repeat #999;
+    background-size: cover;
+    height: 120vh; }
 
 section {
   min-height: 100vh;
@@ -284,3 +288,36 @@ footer ul.nav-last li {
     footer ul.nav-last li a:hover {
       text-decoration: none;
       color: #32c77f; }
+
+.application2 section#whoweare {
+  margin-top: -20vh; }
+  .application2 section#whoweare #carouselIndicators {
+    margin-top: 10vh;
+    overflow: hidden; }
+    .application2 section#whoweare #carouselIndicators .carousel-inner {
+      border-radius: 2vw; }
+      .application2 section#whoweare #carouselIndicators .carousel-inner .carousel-item img {
+        height: auto !important; }
+    .application2 section#whoweare #carouselIndicators .controls-bottom {
+      height: 60px;
+      position: relative;
+      float: right;
+      width: 223px; }
+  .application2 section#whoweare ul {
+    display: flex;
+    padding: 0; }
+    .application2 section#whoweare ul li {
+      color: #32c77f;
+      list-style: none;
+      padding: 0 .2em;
+      font-size: calc(1vw + 10px); }
+      .application2 section#whoweare ul li:first-child::before {
+        content: '';
+        margin: 0;
+        padding: 0; }
+      .application2 section#whoweare ul li::before {
+        color: #32c77f;
+        content: "\2022";
+        padding: 0 .4em 0 0;
+        position: relative;
+        top: 3px; }
