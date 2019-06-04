@@ -216,11 +216,7 @@ h3{
             height: 3vw;
         }
     }
-&#intro2{
-    background: url('../img/headerBackgroundDevices.jpg') no-repeat #999;
-    background-size: cover;
-    height: 120vh;
-    }
+
 }
 
 
@@ -412,6 +408,13 @@ footer{
 }
 
 .application2{
+    header{
+        &#intro2{
+            background: url('../img/headerBackgroundDevices.jpg') no-repeat #999 top right;
+            background-size: cover;
+            height: 120vh;
+            }
+    }
     section{
         &#whoweare{
             margin-top:-20vh;
