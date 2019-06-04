@@ -369,8 +369,7 @@ footer ul.nav-last li {
   height: 125px; }
 
 .application2 section#whatwedo .whatwedo-slide {
-  overflow: hidden !important;
-  margin-top: -100px; }
+  overflow: hidden !important; }
 
 .application2 section#whatwedo .col-full {
   position: relative;
