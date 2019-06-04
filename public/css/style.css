@@ -86,6 +86,9 @@ body {
   background: #32c77f;
   color: white; }
 
+.w-99 {
+  width: 99% !important; }
+
 .gallery-btn {
   background-color: white;
   border-radius: 50%;
@@ -355,11 +358,18 @@ footer ul.nav-last li {
     height: 300px;
     line-height: 1;
     margin-top: 50px; }
+  .application2 section #carouselCaption .carousel-inner .carousel-item {
+    padding: 0 15%; }
 
 .application2 section #carouselCaption .controls-bottom {
   left: 55%;
   position: relative;
-  width: 200px; }
+  width: 200px;
+  height: 125px; }
+
+.application2 section#whatwedo .whatwedo-slide {
+  overflow: hidden !important;
+  margin-top: -100px; }
 
 .application2 section#whatwedo .col-full {
   position: relative;

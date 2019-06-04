@@ -447,20 +447,28 @@ footer{
                         border-radius: $image-border;
                     }
                 }
-                    h3{
-                        font-size:  3.5rem !important;
-                        height: 300px;
-                        line-height: 1;
-                        margin-top: 50px;
-                    }
+                h3{
+                    font-size:  3.5rem !important;
+                    height: 300px;
+                    line-height: 1;
+                    margin-top: 50px;
                 }
+                .carousel-item{
+                    padding: 0 15%;
+                }
+            }
             .controls-bottom{
                left: 55%;
                position: relative;
                width: 200px;
+               height: 125px;
                 }
             }
         &#whatwedo{
+            .whatwedo-slide{
+                overflow: hidden !important;
+                margin-top: -100px;
+            }
             .col-full{
                 position: relative;
                 top: 0;
