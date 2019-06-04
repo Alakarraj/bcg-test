@@ -42,6 +42,9 @@ html {
 body {
   font-family: 'aaux_proregular' !important; }
 
+.image-border {
+  border-radius: 2vw; }
+
 .row {
   margin: 0;
   padding: 0; }
@@ -54,6 +57,12 @@ body {
 
 .align-bottom {
   align-items: baseline; }
+
+.box-light-bg {
+  background-color: #eeeeee;
+  position: relative;
+  top: 300px;
+  height: 300px; }
 
 .bcg-btn {
   margin-top: 2vw;
@@ -90,6 +99,10 @@ body {
     .gallery-btn:hover i {
       color: white; }
 
+/*Padding Override */
+.pt-10 {
+  padding-top: 6rem !important; }
+
 h3 {
   font-size: 4rem !important;
   font-family: 'aaux_problack' !important; }
@@ -106,7 +119,7 @@ h3 {
     position: fixed;
     top: 0;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 9999;
     width: 100%;
     display: flex;
     justify-content: space-between; }
@@ -253,6 +266,15 @@ section {
     .carousel-multi-item-2 .col-4 .card img {
       border-radius: 1vw; }
 
+.carousel-multi-item-2 .col-6 {
+  float: left;
+  width: 50%;
+  max-width: 100%; }
+  .carousel-multi-item-2 .col-6 .card {
+    border: 0; }
+    .carousel-multi-item-2 .col-6 .card img {
+      border-radius: 1vw; }
+
 .carousel-multi-item-2 .controls-bottom {
   position: absolute;
   bottom: 0;
@@ -321,3 +343,47 @@ footer ul.nav-last li {
         padding: 0 .4em 0 0;
         position: relative;
         top: 3px; }
+
+.application2 section #carouselCaption .carousel-inner {
+  overflow: visible; }
+  .application2 section #carouselCaption .carousel-inner .image-top img {
+    position: relative;
+    top: -100px;
+    border-radius: 2vw; }
+  .application2 section #carouselCaption .carousel-inner h3 {
+    font-size: 3.5rem !important;
+    height: 300px;
+    line-height: 1;
+    margin-top: 50px; }
+
+.application2 section #carouselCaption .controls-bottom {
+  left: 55%;
+  position: relative;
+  width: 200px; }
+
+.application2 section#whatwedo .col-full {
+  position: relative;
+  top: 0; }
+  .application2 section#whatwedo .col-full .col-6 {
+    float: left;
+    width: 50%; }
+
+.application2 section#ourwork #carouselFull .controls-bottom {
+  z-index: 999;
+  position: relative;
+  left: 10%;
+  width: 225px; }
+
+.application2 section#blog .col-4 img {
+  max-height: 500px;
+  width: auto !important;
+  margin: 0 auto !important; }
+
+.application2 section#blog h3 {
+  font-size: calc(3vw + 10px) !important;
+  font-family: 'aaux_probold' !important;
+  color: #333;
+  letter-spacing: -2px; }
+
+.application2 section#blog p {
+  font-size: calc(1vw + 10px); }
